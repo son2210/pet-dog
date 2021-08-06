@@ -1,0 +1,62 @@
+{
+  "categorys": [
+    {
+      "name": "nike",
+      "id": 1
+    },
+    {
+      "name": "adidas mối nhất",
+      "id": 2
+    },
+    {
+      "name": "cái mới nhất ",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "sản phẩm 1",
+      "quantity": 100,
+      "price": 100000,
+      " description": "đẹp",
+      "image": "http://"
+    }
+  ],
+  "coment": [
+    {
+      "id": 1,
+      "name": "tài khoản 1",
+      "content": "cố lên bạn ơi",
+      "idAction": 1
+    }
+  ],
+  "post": [
+    {
+      "id": 1,
+      "content": " bài viết abc",
+      "image": [
+        {
+          "id": 1,
+          "link": ""
+        }
+      ]
+    }
+  ],
+  "concact": [
+    {
+      "id": 1,
+      "name": "nguyễn văn toàn ",
+      "content": "cố lên bạn ơi "
+    }
+  ],
+  "acction": [
+    {
+      "id": 1,
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "role": 1,
+      "password": "123456"
+    }
+  ]
+}
