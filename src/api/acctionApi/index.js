@@ -6,7 +6,7 @@ const acctionApi ={
         return axiosClient.get(url);
     },
     get(id){
-        const url =  `/users/${id}`
+        const url =`/users/${id}`
         return axiosClient.get(url);
     },
   

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import CategoryApi from '../../../api/categoryapi'
+// import CategoryApi from '../../../api/categoryapi'
 import ProductApi from '../../../api/productapi'
-import trademarksApi from '../../../api/trademark'
 import SaibarWeb from '../sarbarweb'
 import { Link } from "react-router-dom"
 import addGiohang from '../../localStorage/cart'
@@ -56,7 +55,7 @@ const muaHang = (idProduct)=>{
                     <div key={index} className="tw-w-1/4 tw-shadow-md tw-mb-4 tw-h-[19em] tw-rounded-xl ">
                         <div className="tw-flext tw-items-center tw-justify-center tw-pl-10">
                             <Link to={`/product/${item._id}`}><img className="tw-w-[12em] tw-h-[13em] tw-text-center  tw-bg-cover tw-bg-center tw-transform tw-scale-75 hover:tw-scale-90 tw-duration-700 tw-mb-1"
-                                src={`http://localhost:2210/api/products/readPhoto/${item._id}`} alt /></Link>
+                                src={`http://localhost:2210/api/products/readPhoto/${item._id}`} alt={item.name} /></Link>
                         </div>
                         <Link to={`/product/${item._id}`} className="tw-pr-3 tw-capitalize hover:tw-text-yellow-500 text-decoration-none tw-text-black tw-text-base">  {item.name}  </Link>
                         <div className="tw-mt-2 tw-pt-1">

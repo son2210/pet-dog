@@ -1,12 +1,19 @@
 
-import React from 'react'
+import React, { Suspense ,lazy} from 'react'
 import Routers from './router'
-// import "./style/main.css"
+// const Routers = lazy(() => import('./router'))
+import "./style/main.css"
 import "./style/abc.css"
 function App() {
   return (
     <div className="App">
-        <Routers/>
+      <Routers>
+        {/* <Suspense fallback={<div> xin chào các bạn </div>}>
+            xinc ahfo 
+        </Suspense> */}
+      </Routers>
+
+
     </div>
   );
 }

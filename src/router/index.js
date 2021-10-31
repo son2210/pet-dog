@@ -43,7 +43,6 @@ const Routers = () => {
                             <Route exact path="/admin"> <AdminPage /> </Route>
                             <Route exact path="/admin/products/:path?/:path?">
                                 <ProductsPage>
-                                  
                                         <Switch> 
                                             <Route exact path="/admin/products/list"> <ProductList /></Route>
                                             <Route exact path="/admin/products/add" > <AddproductPage/></Route>
@@ -93,7 +92,7 @@ const Routers = () => {
                 </Route>
                 {/* -------------------front_end--------------------- */}
               
-                <Route > 
+            <Route > 
                 <LayoutWebsite>
                         <Switch>
                             <Route exact path="/"><HomePage /> </Route>
@@ -117,9 +116,6 @@ const Routers = () => {
                         </Switch>
                     </LayoutWebsite>
                 </Route>
-                 
-                 
-               
                 <Router path="*"> <Page404 /> </Router>
             </Switch>
         </Router>

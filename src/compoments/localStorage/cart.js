@@ -2,11 +2,9 @@
 import cartApi from '../../api/giohangapi'
 import { getUser } from './user'
 
-import {useHistory}  from  "react-router-dom"
+// import {useHistory}  from  "react-router-dom"
 let acc = getUser();
-
-const addGiohang = {
-    
+const addGiohang = {   
     async add(idProduct) { // id sản phẩm 
   
         if (!acc) {
